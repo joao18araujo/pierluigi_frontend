@@ -1,0 +1,33 @@
+<%= form_with(model: home, local: true) do |form| %>
+  <% if @errors.try(:any?) %>
+    <div id="error_explanation">
+      <h2><%= pluralize(home.errors.count, "error") %> prohibited this home from being saved:</h2>
+
+      <ul>
+      <% home.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions" align="center">
+    <b>Arquivo Lilypond</b>
+    <br />
+    <%= form.file_field :lilypond %>
+    <br />
+    <br />
+    <b>Espécie</b>
+    <br />
+    <%= form.select :species, ['Primeira Espécie', 'Segunda Espécie', 'Terceira Espécie', 'Quarta Espécie'] %>
+    <br />
+    <br />
+    <b>Modo</b>
+    <br /><%= form.select :mode, ['Inferior', 'Superior'] %>
+    <br />
+    <br />
+    <%= form.submit "Gerar Contraponto" %>
+    <br />
+    <br />
+  </div>
+<% end %>
