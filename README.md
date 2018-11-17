@@ -1,24 +1,34 @@
-# README
+# Counterpoint Generator - Front-end
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* [1. Settings Information](#1-settings-information)
+* [2. How to execute](#2-how-to-execute)
 
-Things you may want to cover:
+## 1. Settings information
 
-* Ruby version
+* Ruby version: **2.3.1**
 
-* System dependencies
+* Rails version: **5.1.6**
 
-* Configuration
+* Used tools: **Atom + terminal**
 
-* Database creation
+## 2. How to execute
 
-* Database initialization
+Execute the solution following these steps:
 
-* How to run the test suite
+* Install lilypond library:
 
-* Services (job queues, cache servers, search engines, etc.)
+  `sudo apt-get install lilypond`
 
-* Deployment instructions
+* Install necessary gems:
 
-* ...
+  `bundle install`
+
+* Create and migrate database:
+
+  `rails db:create`
+
+  `rails db:migrate`
+
+* Run the local server:
+
+  `rails s`
