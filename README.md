@@ -1,4 +1,4 @@
-# Counterpoint Generator - Front-end
+# Pierluigi - Front-end
 
 * [1. Settings Information](#1-settings-information)
 * [2. How to execute](#2-how-to-execute)
@@ -18,6 +18,10 @@ Execute the solution following these steps:
 * Install lilypond library:
 
   `sudo apt-get install lilypond`
+
+* Run make command to compile back-end:
+
+  `make setup`
 
 * Install necessary gems:
 
